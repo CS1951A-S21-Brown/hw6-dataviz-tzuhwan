@@ -10,3 +10,103 @@
 }
 
 /* Include any custom CSS styling here! */
+
+body {
+    display:block;
+    /* text-align: center; */
+}
+
+
+.row {
+    /* margin: 3vh auto; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* background-color:teal; */
+    height: 200vh;
+    width: 100%;
+
+}
+
+.col-lg-6 {
+    display: flex;
+    /* margin: 3vh auto; */
+    text-align: center;
+    height: 75vh;
+    width: 100%;
+    /* margin-bottom: 10vh; */
+    /* background-color: red; */
+    
+} 
+
+.col-lg-5 {
+    height: 70vh;
+    width: 100%;
+    /* margin: 3vh auto; */
+    text-align: center;
+    height: 80vh;
+    margin-bottom: 10vh;
+    margin-right: 3vh;
+    padding-right: 3vh;
+    /* background-color: brown; */
+    
+} 
+
+#graph1 {
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    /* background-color: chartreuse; */
+}
+
+#graph2 {
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    /* background-color: coral; */
+}
+
+#graph3 {
+    margin: 0 auto;
+    text-align: center;
+    height: 150%;
+    width: 100%;
+}
+
+svg {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    /* background-color: coral; */
+}
+
+#svg-3 {
+    text-align: center;
+    margin: 0 auto;
+    /* background-color: blue; */
+    height: 100%;
+    width: 100%;
+    /* transform: translate(5vh, 10vh); */
+}
+
+.btn-div {
+    margin-bottom: 1vh;
+}
+
+.response {
+    height: 30vh;
+    width: 50%;
+    margin: 0 auto;
+    /* background-color: yellow; */
+}
+
+.response li {
+    font-size: 16px;
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: 1vh;
+}
