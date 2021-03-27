@@ -99,7 +99,10 @@ svg {
     height: 30vh;
     width: 50%;
     margin: 0 auto;
-    /* background-color: yellow; */
+}
+
+.response ol {
+    padding-bottom: 5vh;
 }
 
 .response li {

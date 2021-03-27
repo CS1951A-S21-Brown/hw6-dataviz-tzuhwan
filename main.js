@@ -452,9 +452,13 @@ d3.csv("./data/netflix.csv", function (d) {
         .style("left", d3.event.pageX + "px")
         .style("top", d3.event.pageY - 28 + "px");
     })
-    .on("mouseleave", function (d) {
-      Tooltip.style("opacity", 0);
+    // .on("mouseleave", function (d) {
+    //   Tooltip.style("opacity", 0);
+    //   d3.select(this).style("stroke", "none").style("opacity", 0.8);
+    // })
+    .on("mouseout", function (d) {
       d3.select(this).style("stroke", "none").style("opacity", 0.8);
+      div.transition().duration(500).style("opacity", 0);
     });
 
   var simulation = d3
