@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="utf-8">
-        <title>Assignment 6 &laquo; Data Visualization Dashboard&raquo;</title>
-        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-        <link rel="stylesheet" href="main.css"/>
-        <!--Feel free to add more CSS files as needed-->
-        <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
-    </head>
+    <meta charset="utf-8">
+    <title>TzuHwan Seet</title>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css" />
+    <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
 <body>
     <div class="header">
-        <h3>Assignment 6 &laquo; Data Visualization Dashboard &raquo;</h3>
+        <h3>Netflix Dataset Visualization Dashboard</h3>
     </div>
-    <!--  We included a basic HTML structure for the 3 graphs here. Feel free to change this if you'd like  -->
     <div class="row">
         <div class="col-lg-6">
             <div id="graph1"></div>
@@ -20,45 +20,20 @@
                 <p class="title">Average Movie Length on Netflix Over Time</p>
                 <div class="btn-div">
                     <button type="button" class="btn btn-info" onclick="setData('year')">Sort by Year</button>
-                    <button type="button" class="btn btn-info" onclick="setData('descending')">Sort by Movie Length</button>
+                    <button type="button" class="btn btn-info" onclick="setData('descending')">Sort by Movie
+                        Length</button>
                 </div>
-                
-            </div><br/>
+
+            </div><br />
         </div>
         <div class="col-lg-6">
             <div id="graph3">
-                <p class="title" style="margin-top: 3vh;">Actors who Appeared in the Same Netflix Drama Films in 2018</p>
+                <p class="title" style="margin-top: 3vh;">Actors who Appeared in the Same Netflix Drama Films in 2018
+                </p>
             </div>
         </div>
     </div>
-    <div class="response">
-        <h2>Written Questions</h2>
-        <ol>
-           <li>
-                I chose to work with the Netflix data set. For the first question, I decided to group the number of movies and TV shows by the "listed_in" column, and then filter for columns that only have one single genre, such as "Documentaries", as opposed to "International Movies, Sci-Fi" to provide clear overviews on basic genres without sub-genres. This also helped to keep the chart visually neat. <br>
-                For the 2nd question, given the huge range of years included in the data set, I decided to calculate the average movie lengths for every 5 years from 1945 to 2020. I also provided two sorting orders that users can toggle to observe different patterns. <br>
-                For the 3rd question, I chose to narrow down the data that I needed to display by selecting only the actors who acted in Dramas Films in 2018, as the cast data for all year range is too massive. I picked the Dramas genre because it is more likely that actors in the same genres collaborate with one another. So each node is an actor/actress, and the movie in which they collaborate are the links between them. Each cluster more or less represent a movie. 
-          </li> 
-          <br>
-          <li>
-                D3 is helpful because it simplifies a lot of computational work which would be incredibly tedious, such as scaling the x/y-axis, figuring the width of the bar etc. It also provides me with a great degree of flexibility in visualing the data in different ways without additional hassle, such as the toggle buttons that can sort the movie lengths differently. Lastly D3 enables me to include interactive elements that adds to the functionality and engagement of my data visualization, such as the tool-tip in the force-directed graph.  
-          </li>
-          <br>
-          <li>
-                In my opinion, transitioning from simple d3 bar charts to other forms of hierchical graphs has a steep learning curve, so if I were to be short on time, then d3 would not be the best tool for creating a visualization. Other Libraries such as Matplotlib or Tableau are likely to be easier to work with, as one doesn't need to be concerned with DOM manipulation etc. Secondly, D3 is not the best visualization tool if your goal is to visually explore the data at the start of a data project cycle, as usually one already has a plan/design in mind for visualizing the data already. Lastly, I think D3.js is not the best tool, if one doesn't have website integration in mind. 
-          </li>
-          <br>
-          <li>
-                I think a group of users that may struggle understanding my data visualization is visually, especially with the Force-directed graph. Although I have used highly contrasting color to separate the node and links, the nodes and links are relatively small. The fact that the information about the actors and movies are displayed through hover layovers means that some physically disabled users may not be able to move their mouse around to explore the data. In the Betterment article by Amanda Miller, she talked about how tooltip labels are often difficult or impossible to do when using assistive technology. Instead, show the output at all times. <br>
-                There is also the issue of non-responsive data visualization, which means that individuals who do not have a desktop/laptop will probably find it challenging to understand my graphs. 
-            </li>
-            <br>
-            <li>
-                Technical constraints are definitely a key factor. As this is my first time using d3.js, there are elements that I find difficult to control such as margin control. I hardcoded quite a few of my margins, which is likely to give some users on certain devices trouble reading my data. If possible I would also like to share my data viz to peers who have different needs so that they can provide me meaningful user feedback. There are certainly shortcomings that I cannot spot on my own.  
-            </li>
-        </ol>
-    </div>
-    <!--Feel free to add more JavaScript files as needed-->
     <script type="text/javascript" src="main.js"></script>
 </body>
+
 </html>
